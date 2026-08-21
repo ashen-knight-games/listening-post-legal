@@ -1,0 +1,4 @@
+# Files in this repo are tied to the game project via hard links (see game project dev/link_legal_repo.ps1).
+# Any modification to workspace files by Git (e.g., line-ending normalization) generates a new inode, silently breaking the hard links.
+
+* -text
