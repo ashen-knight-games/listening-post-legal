@@ -81,6 +81,7 @@ footer{
 <li>Opting out <strong>does not alter your experience</strong>. All game features remain fully accessible and unchanged.</li>
 <li><strong>A problem report you fill in yourself</strong> sends us the information you provided (section 3).</li>
 <li><strong>If the game did not shut down properly</strong>, a crash report is sent the next time it starts (section 3; how much it contains depends on your answer and your region, and none is sent if you chose "No").</li>
+<li><strong>When you close the game normally</strong>, it sends one anonymous exit report saying which screen you stopped on (section 3; never with an account, and none is sent if you chose "No").</li>
 </ul>
 <hr />
 <h2>1. Who we are</h2>
@@ -109,8 +110,8 @@ footer{
 <li>Your IP address. <strong>We do not store it.</strong> Our hosting provider necessarily processes it briefly in order to deliver the request, but we never read it, never write it to a file, and request logging is switched off.</li>
 <li>Any file or program on your computer, and any hardware detail beyond the specific items listed above.</li>
 </ul>
-<h2>3. Problem reports and crash reports</h2>
-<p>Problem reports and crash reports are collected separately from the gameplay logs. Neither one waits for the prompt in section 2, because each has its own reason: a problem report is something you write and choose to send yourself, and a crash report only exists because the game did not get to shut down properly.</p>
+<h2>3. Problem reports, crash reports and exit reports</h2>
+<p>Problem reports, crash reports and exit reports are collected separately from the gameplay logs. None of them waits for the prompt in section 2, because each has its own reason: a problem report is something you write and choose to send yourself, a crash report only exists because the game did not get to shut down properly, and an exit report is the one thing that tells us where people stop before they ever reach that prompt.</p>
 <h3>Problem reports</h3>
 <p>The Options screen and the pause menu in battle have a <strong>Report a problem</strong> button. You choose a category, write what you want to report, and press <strong>Send</strong>.</p>
 <p>A report contains:</p>
@@ -129,6 +130,13 @@ footer{
 <li><strong>In every other case</strong> (you have not been asked yet, you chose "Ask me later", or you are in an anonymous region): the report is anonymous. It carries the same screen, level, wave and timing information, but a coarse speed band instead of hardware model names, no account, and only the error lines from the log file (at most 4 KB). It is never written to your computer: it is sent once, and if that fails it is simply lost.</li>
 </ul>
 <p>To keep the log anonymous, before any log text leaves your computer the game replaces your user folder name, and any path that contains your operating-system user name, with <code>&lt;user&gt;</code>.</p>
+<h3>Exit reports</h3>
+<p>The prompt in section 2 appears only after your first battle. Anyone who closes the game before that — on the start screen, the title screen or partway through the prologue — leaves no gameplay log at all, so we would never learn where they stopped. To see that, when you close the game normally (the window's close button, or Quit in the menu) it sends <strong>one exit report</strong>.</p>
+<p>An exit report is <strong>always anonymous</strong>, whatever you answered in section 2 and wherever you are: it never carries your Steam ID number, your hardware model names or any log text. It contains the screen you were on, the level and wave if you were in a battle, which screens you visited during this launch, how many battles you finished, how long the game had been running, the game version, your region as described in section 4, and whether any save file existed when the game started (so we can tell first launches from returning ones).</p>
+<ul>
+<li><strong>If you chose "No"</strong> to sharing gameplay logs, no exit report is sent.</li>
+<li><strong>In every other case</strong> it is sent once, at the moment the game closes. It is never written to your computer; if it cannot be sent within about two seconds, the game closes anyway and the report is simply lost.</li>
+</ul>
 <h2>4. Two different records, depending on where you are</h2>
 <p>Geolocation defaults are handled by checking your system's country registration directly through Steam.</p>
 <h3>If you are in the EU, the EEA, the United Kingdom, Switzerland or mainland China</h3>
