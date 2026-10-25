@@ -29,7 +29,7 @@ Our game is distributed exclusively via Steam. Because Valve manages all purchas
 
 **Following your initial battle**, a one-time prompt will ask if you consent to sharing your gameplay logs. Your options are **No, Ask me later, or Yes**.
 
-- Choosing **Yes** transmits the recorded data to us, which includes the match you just finished.
+- Choosing **Yes** transmits the recorded data to us, which includes the match you just finished; if the prologue was played during this same launch, it is also included.
 - Choosing **No** permanently deletes the logged session, and the prompt will never appear again.
 - Opting to **Ask me later** wipes the current log and defers the question to your next session. If you decline a second time under this option, the system stops prompting you entirely.
 - Until an explicit **Yes** is given, all data resides strictly within your system's RAM. It will never be written to your local drive or broadcasted over the network.
@@ -81,7 +81,7 @@ To keep the log anonymous, before any log text leaves your computer the game rep
 
 The prompt in section 2 appears only after your first battle. Anyone who closes the game before that — on the start screen, the title screen or partway through the prologue — leaves no gameplay log at all, so we would never learn where they stopped. To see that, when you close the game normally (the window's close button, or Quit in the menu) it sends **one exit report**.
 
-An exit report is **always anonymous**, whatever you answered in section 2 and wherever you are: it never carries your Steam ID number, your hardware model names or any log text. It contains the screen you were on, the level and wave if you were in a battle, which screens you visited during this launch, how many battles you finished, how long the game had been running, the game version, your region as described in section 4, and whether any save file existed when the game started (so we can tell first launches from returning ones).
+An exit report is **always anonymous**, whatever you answered in section 2 and wherever you are: it never carries your Steam ID number, your hardware model names or any log text. It contains the screen you were on, the level and wave if you were in a battle, the seconds since the battle started (if in a battle), the prologue step and part with its duration (if in the prologue), which screens you visited during this launch, how many battles you finished, how long the game had been running, the game version, your region as described in section 4, whether any save file existed when the game started (so we can tell first launches from returning ones), the seconds since your last key press or mouse click, the interface language, and if a question was open when you closed the game: how long it had been open, how many wrong keys you had pressed, how far the hint had been revealed, how many times the sentence was replayed automatically and how many times you replayed it yourself, and how many keys you had pressed in that question (**counts only**).
 
 - **If you chose "No"** to sharing gameplay logs, no exit report is sent.
 - **In every other case** it is sent once, at the moment the game closes. It is never written to your computer; if it cannot be sent within about two seconds, the game closes anyway and the report is simply lost.
