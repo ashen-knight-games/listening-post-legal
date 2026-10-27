@@ -10,12 +10,12 @@
 ## In short
 
 - The game logs your gameplay patterns—specifically your answers, completion times, and where you encounter difficulties. It strictly avoids accessing any text or data outside the game environment.
-- **Your consent is required**. No data is transmitted or saved locally unless you explicitly opt in. Selecting "No" or "Ask me later" halts all data actions entirely.
+- **Gameplay logs require your consent**. They are not transmitted or saved locally unless you explicitly opt in, and selecting "No" or "Ask me later" stops the recording. The only exceptions are the three reports in section 3: a problem report you send yourself, and the anonymous crash and exit reports (both of which also stop once you choose "No").
 - **For players in the EU, EEA, UK, Switzerland, or mainland China**: All data is **entirely anonymized**. We have no way to link records to specific individuals or determine if multiple logs belong to the same user.
 - Opting out **does not alter your experience**. All game features remain fully accessible and unchanged.
 - **A problem report you fill in yourself** sends us the information you provided (section 3).
 - **If the game did not shut down properly**, a crash report is sent the next time it starts (section 3; how much it contains depends on your answer and your region, and none is sent if you chose "No").
-- **When you close the game normally**, it sends one anonymous exit report saying which screen you stopped on (section 3; never with an account, and none is sent if you chose "No").
+- **When you close the game normally**, it sends one anonymous exit report saying where you stopped (the screen, the battle or the prologue step) plus a few counts (section 3; never with an account, and none is sent if you chose "No").
 
 ---
 
@@ -29,10 +29,10 @@ Our game is distributed exclusively via Steam. Because Valve manages all purchas
 
 **Following your initial battle**, a one-time prompt will ask if you consent to sharing your gameplay logs. Your options are **No, Ask me later, or Yes**.
 
-- Choosing **Yes** transmits the recorded data to us, which includes the match you just finished.
+- Choosing **Yes** transmits the recorded data to us, which includes the match you just finished; if the prologue was played during this same launch, it is also included.
 - Choosing **No** permanently deletes the logged session, and the prompt will never appear again.
-- Opting to **Ask me later** wipes the current log and defers the question to your next session. If you decline a second time under this option, the system stops prompting you entirely.
-- Until an explicit **Yes** is given, all data resides strictly within your system's RAM. It will never be written to your local drive or broadcasted over the network.
+- Opting to **Ask me later** wipes the current log and defers the question to your next session. If you choose this option a second time, it counts as "No" and the system stops prompting you entirely.
+- Until an explicit **Yes** is given, your gameplay log resides strictly within your system's RAM. It will never be written to your local drive or broadcasted over the network.
 
 ### What a record contains
 
@@ -81,7 +81,7 @@ To keep the log anonymous, before any log text leaves your computer the game rep
 
 The prompt in section 2 appears only after your first battle. Anyone who closes the game before that — on the start screen, the title screen or partway through the prologue — leaves no gameplay log at all, so we would never learn where they stopped. To see that, when you close the game normally (the window's close button, or Quit in the menu) it sends **one exit report**.
 
-An exit report is **always anonymous**, whatever you answered in section 2 and wherever you are: it never carries your Steam ID number, your hardware model names or any log text. It contains the screen you were on, the level and wave if you were in a battle, which screens you visited during this launch, how many battles you finished, how long the game had been running, the game version, your region as described in section 4, and whether any save file existed when the game started (so we can tell first launches from returning ones).
+An exit report is **always anonymous**, whatever you answered in section 2 and wherever you are: it never carries your Steam ID number, your hardware model names or any log text. It contains the date it was sent (the day only, no time), the screen you were on, the chapter, level, wave and that battle's settings if you were in a battle (difficulty, speech speed, the tower's maximum health and the level's article topic), the seconds since the battle started (if in a battle), the prologue step and part with its duration (if in the prologue), which screens you visited during this launch, how many battles you finished, how long the game had been running, the game version, your region as described in section 4, whether any save file existed when the game started (so we can tell first launches from returning ones), the seconds since your last key press or mouse click, the interface language, and if a question was open when you closed the game: how long it had been open, how many wrong keys you had pressed, how far the hint had been revealed, how many times the sentence was replayed automatically and how many times you replayed it yourself, and how many keys you had pressed in that question (**counts only**).
 
 - **If you chose "No"** to sharing gameplay logs, no exit report is sent.
 - **In every other case** it is sent once, at the moment the game closes. It is never written to your computer; if it cannot be sent within about two seconds, the game closes anyway and the report is simply lost.
@@ -127,7 +127,7 @@ Until two years after the game's full release, after which all records are delet
 
 - Request access: You may ask for a complete copy of the data we currently store regarding your sessions.
 - Request erasure: You have the right to ask us to purge your collected logs.
-- Revoke consent: Toggle off gameplay data sharing within the game's Settings menu. This immediately halts all transmissions and purges any pending data cached on your device, and it also stops crash reports (section 3). Records that were already sent are covered by "Request erasure" above.
+- Revoke consent: Toggle off gameplay data sharing within the game's Settings menu. This immediately halts all transmissions and purges any pending data cached on your device, and it also stops crash reports and exit reports (section 3). Records that were already sent are covered by "Request erasure" above.
 - File a formal complaint: If you believe your data has been mismanaged, you can contact your local regulatory body. This refers to your residency's national authority within the EU, the Information Commissioner's Office (ICO) in the UK, or — in mainland China — the department charged with personal information protection duties under Article 65 of the PIPL, a function coordinated nationally by the Cyberspace Administration of China.
 
 **A Technical Caveat on Deletion/Access**: For users residing in the EU, EEA, UK, Switzerland or mainland China, our compliance with data minimization means your logs carry zero identifying metadata. Consequently, we are physically unable to isolate or verify "your" specific files to display or erase them. This is an engineered limitation of our strict anonymity protocol, not a refusal to cooperate.
