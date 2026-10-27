@@ -15,6 +15,7 @@
 - Opting out **does not alter your experience**. All game features remain fully accessible and unchanged.
 - **A problem report you fill in yourself** sends us the information you provided (section 3).
 - **If the game did not shut down properly**, a crash report is sent the next time it starts (section 3; how much it contains depends on your answer and your region, and none is sent if you chose "No").
+- **When you close the game normally**, it sends one anonymous exit report saying which screen you stopped on (section 3; never with an account, and none is sent if you chose "No").
 
 ---
 
@@ -48,9 +49,9 @@ Our game is distributed exclusively via Steam. Because Valve manages all purchas
 - Your IP address. **We do not store it.** Our hosting provider necessarily processes it briefly in order to deliver the request, but we never read it, never write it to a file, and request logging is switched off.
 - Any file or program on your computer, and any hardware detail beyond the specific items listed above.
 
-## 3. Problem reports and crash reports
+## 3. Problem reports, crash reports and exit reports
 
-Problem reports and crash reports are collected separately from the gameplay logs. Neither one waits for the prompt in section 2, because each has its own reason: a problem report is something you write and choose to send yourself, and a crash report only exists because the game did not get to shut down properly.
+Problem reports, crash reports and exit reports are collected separately from the gameplay logs. None of them waits for the prompt in section 2, because each has its own reason: a problem report is something you write and choose to send yourself, a crash report only exists because the game did not get to shut down properly, and an exit report is the one thing that tells us where people stop before they ever reach that prompt.
 
 ### Problem reports
 
@@ -75,6 +76,15 @@ What a crash report contains follows the regions in section 4 and the choice you
 - **In every other case** (you have not been asked yet, you chose "Ask me later", or you are in an anonymous region): the report is anonymous. It carries the same screen, level, wave and timing information, but a coarse speed band instead of hardware model names, no account, and only the error lines from the log file (at most 4 KB). It is never written to your computer: it is sent once, and if that fails it is simply lost.
 
 To keep the log anonymous, before any log text leaves your computer the game replaces your user folder name, and any path that contains your operating-system user name, with `<user>`.
+
+### Exit reports
+
+The prompt in section 2 appears only after your first battle. Anyone who closes the game before that — on the start screen, the title screen or partway through the prologue — leaves no gameplay log at all, so we would never learn where they stopped. To see that, when you close the game normally (the window's close button, or Quit in the menu) it sends **one exit report**.
+
+An exit report is **always anonymous**, whatever you answered in section 2 and wherever you are: it never carries your Steam ID number, your hardware model names or any log text. It contains the screen you were on, the level and wave if you were in a battle, which screens you visited during this launch, how many battles you finished, how long the game had been running, the game version, your region as described in section 4, and whether any save file existed when the game started (so we can tell first launches from returning ones).
+
+- **If you chose "No"** to sharing gameplay logs, no exit report is sent.
+- **In every other case** it is sent once, at the moment the game closes. It is never written to your computer; if it cannot be sent within about two seconds, the game closes anyway and the report is simply lost.
 
 ## 4. Two different records, depending on where you are
 
